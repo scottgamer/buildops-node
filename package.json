@@ -1,0 +1,34 @@
+{
+  "name": "node_react_graphql_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scottgamer/node_react_graphql_mongodb.git"
+  },
+  "author": "Richard Munoz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scottgamer/node_react_graphql_mongodb/issues"
+  },
+  "homepage": "https://github.com/scottgamer/node_react_graphql_mongodb#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8",
+    "mongoose": "^5.8.1",
+    "npm": "^6.13.4"
+  },
+  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.2"
+  }
+}
