@@ -23,6 +23,43 @@ The project is built using the following technologies:
 
 ## AWS Services Explanation
 
+### AWS CLI
+
+Check that Python version is 2.7+ or 3.4+
+
+Install AWS CLI version 1 using the bundled installer
+
+```bash
+curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
+unzip awscli-bundle.zip
+```
+
+Note: if you don't have unzip, use your favorite package manager or an equivalent to install it.
+
+Run the install program. This enables users to call the AWS CLI by typing aws from any directory.
+
+```bash
+sudo ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+```
+
+Note: if you want to use a specific version of python run:
+
+```bash
+$ sudo /usr/local/bin/python3.7 awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
+```
+
+Check the installation by running `$ aws --version`
+
+Configure the AWS CLI
+
+```bash
+$ aws configure
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bfiCYEXAMPLEKEY
+Default region name [None]: us-east-1
+Default output format [None]: ENTER
+```
+
 ### Lambda
 
 Lambda allows running code without taking care of provisioning servers.
