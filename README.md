@@ -23,6 +23,50 @@ The project is built using the following technologies:
 
 ## AWS Services Explanation
 
+### EC2
+
+Install git 
+
+```bash
+sudo yum update -y
+sudo yum install -y
+git version
+```
+
+Install node
+
+```bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+. ~/.nvm/nvm.sh
+nvm install [node_version]
+```
+
+NOTE: if while trying to run mpn install an error regarding permissions appears, change the repository owner to the one who can run npm command.
+
+```bash
+sudo chown -R $(whoami) repo-directory/
+```
+
+Install pm2
+
+```bash
+sudo npm install pm2 -g
+```
+
+
+NOTE: if for any reason, after nginx has been installed, the server still does not show the nginx index, run the following commands: 
+
+```bash
+sudo fuser -k 80/tcp
+sudo fuser -k 443/tcp
+
+sudo service nginx restart
+```
+
+This is because sometimes apache is still running on those ports.
+
+
+
 ### AWS CLI
 
 Check that Python version is 2.7+ or 3.4+
